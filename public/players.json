@@ -1,0 +1,167 @@
+[
+  {
+    "id": "p001",
+    "img": "https://i.ibb.co.com/fGQMZrZy/the-image-background-should-have-a-tiger.jpg",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "rating": 95,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm orthodox spin",
+    "price": 1200000
+  },
+  {
+    "id": "p002",
+    "img": "https://i.ibb.co.com/PG5tFKqJ/images.jpg",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 88,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 850000
+  },
+  {
+    "id": "p003",
+    "img": "https://i.ibb.co.com/vxmmRM1y/images-4.jpg",
+    "name": "Liton Das",
+    "country": "Bangladesh",
+    "role": "Wicketkeeper-Batsman",
+    "rating": 86,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "—",
+    "price": 900000
+  },
+  {
+    "id": "p004",
+    "img": "https://i.ibb.co.com/rGtzpNGg/images-1.jpg",
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "role": "Wicketkeeper-Batsman",
+    "rating": 90,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "—",
+    "price": 950000
+  },
+  {
+    "id": "p005",
+    "img": "https://i.ibb.co.com/NdJkxJHw/download-4.jpg",
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "rating": 84,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 800000
+  },
+  {
+    "id": "p006",
+    "img": "https://i.ibb.co.com/ym8gDLc7/download-5.jpg",
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "rating": 87,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 750000
+  },
+  {
+    "id": "p007",
+    "img": "https://i.ibb.co.com/cSG9Q5Sb/download-6.jpg",
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "rating": 89,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm fast-medium",
+    "price": 1000000
+  },
+  {
+    "id": "p008",
+    "img": "https://i.ibb.co.com/pvTY0Pt6/download-7.jpg",
+    "name": "Mehidy Hasan Miraz",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "rating": 85,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 820000
+  },
+  {
+    "id": "p009",
+    "img": "https://i.ibb.co.com/SDzNs50Q/download-8.jpg",
+    "name": "Najmul Hossain Shanto",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 83,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 780000
+  },
+  {
+    "id": "p010",
+    "img": "https://i.ibb.co.com/gLFgdb8J/download-9.jpg",
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "rating": 97,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 2000000
+  },
+  {
+    "id": "p011",
+    "img": "https://i.ibb.co.com/CK6pBYm2/download-10.jpg",
+    "name": "MS Dhoni",
+    "country": "India",
+    "role": "Wicketkeeper-Batsman",
+    "rating": 96,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "—",
+    "price": 1800000
+  },
+  {
+    "id": "p012",
+    "img": "https://i.ibb.co.com/CKzg5Twj/images-2.jpg",
+    "name": "Rohit Sharma",
+    "country": "India",
+    "role": "Batsman",
+    "rating": 94,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1900000
+  },
+  {
+    "id": "p013",
+    "img": "https://i.ibb.co.com/Qvf7FL43/download-11.jpg",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "rating": 95,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1950000
+  },
+  {
+    "id": "p014",
+    "img": "https://i.ibb.co.com/5gYKCZmF/images-3.jpg",
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "All-rounder",
+    "rating": 93,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "price": 2100000
+  },
+  {
+    "id": "p015",
+    "img": "https://i.ibb.co.com/hJHSNk1x/download-12.jpg",
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "rating": 92,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1850000
+  }
+]
