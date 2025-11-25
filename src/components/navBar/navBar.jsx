@@ -5,7 +5,7 @@ import doller from '../../assets/doller.png';
 const navBar = () => {
     return (
       <div>
-        <div className="navbar bg-base-100 shadow-sm  w-[90%] mx-auto h-[5rem] flex flex-row justify-start items-center bg-white mb-[2rem]">
+        <div className="navbar bg-base-100   w-[90%] mx-auto h-[5rem] flex flex-row justify-start items-center bg-white">
           <div className="flex-1">
             <a className=" text-xl">
               <img className="" src={navImg} alt="logo" />
