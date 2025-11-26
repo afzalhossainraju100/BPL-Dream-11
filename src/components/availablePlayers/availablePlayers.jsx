@@ -15,7 +15,7 @@ const AvailablePlayers = ({ playersPromise }) => {
   //     console.log(playerData);
   //   }, [playerData]);
   return (
-    <div className="w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-[14rem]">
       {playerData.map((player) => (
         <div
           key={player.id}
