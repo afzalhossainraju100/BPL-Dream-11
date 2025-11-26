@@ -11,13 +11,13 @@ return (
       <p className="text-[#131313b3] text-[24px] font-[500] leading-[1.5rem] tracking-normal items-center">
         Get the latest updates and news right in your inbox!
       </p>
-      <div className="flex gap-2 mb-[4rem] ">
+      <div className="flex gap-2 mb-[4rem] flex-col md:flex-row">
         <input
           className="justify-start px-6 py-4 border rounded-xl border-box border-[#13131326]"
           type="email"
           placeholder="Enter your email"
         />
-        <button className="px-6 py-3 rounded-2xl font-semibold text-black bg-gradient-to-r from-pink-400 via-pink-300 to-yellow-400 shadow-md hover:shadow-lg transition-all duration-300 ">
+        <button className="px-6 py-3 rounded-2xl font-semibold text-black bg-gradient-to-r from-pink-400 via-pink-300 to-yellow-400 shadow-md hover:shadow-lg transition-all duration-300 hover:bg-gradient-to-l">
           Subscribe
         </button>
       </div>
