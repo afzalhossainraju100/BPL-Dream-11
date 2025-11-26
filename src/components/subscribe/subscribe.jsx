@@ -6,7 +6,7 @@ const Subscribe = () => {
     <div className="relative">
       <div
         className=" w-[90%] mx-auto mt-[4rem]  bg-[#ffffff] rounded-lg flex flex-col justify-center items-center text-center gap-10 border-1 border-box border-[#1313131a] px-12 py-3 bg-[url('./assets/bg-shadow.png')] bg-cover bg-center 
-        absolute -top-70 left-1/2 -translate-x-1/2"
+        absolute -top-60 left-1/2 -translate-x-1/2"
       >
         <h2 className="font-[700] text-[2rem] items-center leading-[2.5rem] mt-[4rem] tracking-normal">
           <b>Subscribe to our Newsletter</b>
@@ -26,7 +26,7 @@ const Subscribe = () => {
         </div>
       </div>
       <div className="w-[100%] p-6 bg-[#06091a] text-[white]">
-        <div className="flex flex-col justify-center items-center text-center gap-4 w-[90%] mx-auto p-6 mt-[14rem]">
+        <div className="flex flex-col justify-center items-center text-center gap-4 w-[90%] mx-auto p-6 md:mt-[14rem] mt-[20rem]">
           <img src={footerImg} alt="footer-logo" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 mb-4">
             <div className="flex flex-col md:items-left md:justify-left md:text-left space-y-4">
