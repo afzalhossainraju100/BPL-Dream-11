@@ -6,7 +6,7 @@ const Subscribe = () => {
     <div className="relative">
       <div
         className=" w-[90%] mx-auto mt-[4rem]  bg-[#ffffff] rounded-lg flex flex-col justify-center items-center text-center gap-10 border-1 border-box border-[#1313131a] px-12 py-3 bg-[url('./assets/bg-shadow.png')] bg-cover bg-center 
-        absolute -top-60 left-1/2 -translate-x-1/2"
+        absolute -top-70 left-1/2 -translate-x-1/2"
       >
         <h2 className="font-[700] text-[2rem] items-center leading-[2.5rem] mt-[4rem] tracking-normal">
           <b>Subscribe to our Newsletter</b>
