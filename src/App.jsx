@@ -7,6 +7,7 @@ import Banner from "./components/banner/banner";
 import Subscribe from "./components/subscribe/subscribe";
 import Footer from "./components/footer/footer";
 import Titlebar from "./components/titlebar/titlebar";
+import { useState } from "react";
 
 const fetchPlayers = async () => {
   const res = await fetch("/players.json");
@@ -14,25 +15,29 @@ const fetchPlayers = async () => {
 };
 
 function App() {
+  const [toggle, setToggle] = useState(true);
   const playersPromise = fetchPlayers();
 
   return (
     <>
       <NavBar></NavBar>
       <Banner></Banner>
-      <Titlebar></Titlebar>
-      <Suspense
-        fallback={
-          <div className="w-[90%] mx-auto mb-[2rem] flex flex-col-reverse justify-center items-center gap-2">
-            <span className="loading loading-ring loading-xs"></span>
-            <span className="loading loading-ring loading-sm"></span>
-            <span className="loading loading-ring loading-md"></span>
-          </div>
-        }
-      >
-        <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
-      </Suspense>
-      <SelectedPlayers></SelectedPlayers>
+      <Titlebar setToggle={setToggle} toggle={toggle}></Titlebar>
+      {toggle === true ? (
+        <Suspense
+          fallback={
+            <div className="w-[90%] mx-auto mb-[2rem] flex flex-col-reverse justify-center items-center gap-2">
+              <span className="loading loading-ring loading-xs"></span>
+              <span className="loading loading-ring loading-sm"></span>
+              <span className="loading loading-ring loading-md"></span>
+            </div>
+          }
+        >
+          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+        </Suspense>
+      ) : (
+        <SelectedPlayers></SelectedPlayers>
+      )}
       <Subscribe></Subscribe>
       <Footer></Footer>
     </>

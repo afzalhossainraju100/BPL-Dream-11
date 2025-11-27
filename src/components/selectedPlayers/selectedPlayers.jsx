@@ -4,8 +4,7 @@ import user from "../../assets/user 1.png";
 
 const SelectedPlayers = () => {
   return (
-    <div>
-      <div className="w-[90%] mx-auto border-box border border-[#1313131a] rounded-xl">
+    <div className="w-[90%] mx-auto border-box border border-[#1313131a] rounded-xl mb-[14rem]">
         <div className="flex justify-between p-5 items-center ">
           <div className="flex items-center gap-3">
             <div>
@@ -20,7 +19,6 @@ const SelectedPlayers = () => {
             <img src={frame} alt="Delete" />
           </div>
         </div>
-      </div>
     </div>
   );
 };
