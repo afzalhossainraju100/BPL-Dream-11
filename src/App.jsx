@@ -6,6 +6,7 @@ import SelectedPlayers from "./components/selectedPlayers/selectedPlayers";
 import Banner from "./components/banner/banner";
 import Subscribe from "./components/subscribe/subscribe";
 import Footer from "./components/footer/footer";
+import Titlebar from "./components/titlebar/titlebar";
 
 const fetchPlayers = async () => {
   const res = await fetch("/players.json");
@@ -19,6 +20,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Banner></Banner>
+      <Titlebar></Titlebar>
       <Suspense
         fallback={
           <div className="w-[90%] mx-auto mb-[2rem] flex flex-col-reverse justify-center items-center gap-2">
