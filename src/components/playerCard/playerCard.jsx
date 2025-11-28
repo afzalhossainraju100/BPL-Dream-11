@@ -1,27 +1,38 @@
-import React from 'react';
+import React from "react";
 import userImg from "../../assets/user 1.png";
 import flag from "../../assets/report 1.png";
-import { useState } from 'react';
+// using simple alert instead of react-toastify to avoid extra dependency during development
 
-const PlayerCard = ({ player, setAvailableBalance, availableBalance }) => {
-  const [isSelected, setIsSelected] = useState(false);
-  const handleSelected = (playerData) =>{
+const PlayerCard = ({
+  player,
+  setAvailableBalance,
+  availableBalance,
+  purchasedPlayers,
+  setPurchasedPlayers,
+  influenceBalance,
+  maxPlayerSelect,
+}) => {
+  // derive selected state from parent `purchasedPlayers` so selection persists across views
+  const isSelected = purchasedPlayers?.some((p) => p.id === player.id);
+  const handleSelected = (playerData) => {
     const price = playerData.price;
     // .split(",").join("").split("USD").join("");
-    if(availableBalance < price){
-      alert("Insufficient balance to select this player.");
+    if (availableBalance < price) {
+      influenceBalance();
       return;
     }
-    setIsSelected(!isSelected);
-    setAvailableBalance(
-      availableBalance - price
-    );
-  }
+    if (purchasedPlayers.length === 11) {
+      maxPlayerSelect();
+      return;
+    }
+    setAvailableBalance(availableBalance - price);
+    setPurchasedPlayers([...(purchasedPlayers || []), playerData]);
+  };
   return (
     <div>
       <div
         key={player.id}
-        className="card bg-base-100  shadow-sm p-[1rem] bg-white space-y-4"
+        className="card bg-base-100 shadow-sm p-[1rem] bg-white space-y-4"
       >
         <figure className="mb-[1rem]">
           <img
@@ -58,12 +69,14 @@ const PlayerCard = ({ player, setAvailableBalance, availableBalance }) => {
             <b>Price:$ {player.price}</b>
           </p>
           <button
-            disabled={isSelected}
+            disabled={isSelected === true}
             onClick={() => {
               handleSelected(player);
             }}
-            className={`border border-box border-[#1313131a] p-2 rounded-lg ${
-              isSelected ? "bg-green-500 text-white" : "bg-white text-black"
+            className={`border border-[#1313131a] p-2 rounded-lg ${
+              isSelected === true
+                ? "bg-green-500 text-white"
+                : "bg-white text-black"
             }`}
           >
             {isSelected === true ? "Selected" : "Choose Player"}

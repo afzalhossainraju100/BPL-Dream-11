@@ -5,6 +5,10 @@ const AvailablePlayers = ({
   playersPromise,
   setAvailableBalance,
   availableBalance,
+  purchasedPlayers,
+  setPurchasedPlayers,
+  influenceBalance,
+  maxPlayerSelect
 }) => {
   const playerData = use(playersPromise);
   //   const mountedRef = useRef(false);
@@ -21,9 +25,14 @@ const AvailablePlayers = ({
     <div className="w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-[14rem]">
       {playerData.map((player) => (
         <PlayerCard
+          key={player.id}
           availableBalance={availableBalance}
           setAvailableBalance={setAvailableBalance}
+          purchasedPlayers={purchasedPlayers}
+          setPurchasedPlayers={setPurchasedPlayers}
           player={player}
+          influenceBalance={influenceBalance}
+          maxPlayerSelect={maxPlayerSelect}
         ></PlayerCard>
       ))}
     </div>

@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Titlebar = ({ setToggle, toggle }) => {
+const Titlebar = ({ 
+  setToggle,
+  toggle, 
+  purchasedPlayers 
+}) => {
     return (
       <div className="w-[90%] mx-auto mb-[2rem] mt-[2rem] flex justify-between items-center gap-2 pb-2">
         <div className='font-[700] text-[1.4rem] font-family: "Times New Roman", serif;'>
           <p>
-            {toggle === true ? "Available Players" : "Selected Player (4/6)"}
+            {toggle === true ? "Available Players" : `Selected Player (${purchasedPlayers.length}/11)`}
           </p>
         </div>
         <div className="flex">
@@ -23,11 +27,12 @@ const Titlebar = ({ setToggle, toggle }) => {
               toggle === false ? "bg-[#E7FE29]" : ""
             } font-[400] text-[1rem] `}
           >
-            Selected (4)
+            Selected ({purchasedPlayers.length})
           </button>
         </div>
       </div>
     );
 };
+
 
 export default Titlebar;
