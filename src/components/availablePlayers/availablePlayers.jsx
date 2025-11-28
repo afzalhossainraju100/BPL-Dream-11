@@ -8,7 +8,7 @@ const AvailablePlayers = ({
   purchasedPlayers,
   setPurchasedPlayers,
   influenceBalance,
-  maxPlayerSelect
+  maxPlayerSelect,
 }) => {
   const playerData = use(playersPromise);
   //   const mountedRef = useRef(false);

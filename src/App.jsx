@@ -1,5 +1,5 @@
 import "./App.css";
-import React from 'react';
+import React from "react";
 import { Suspense } from "react";
 import NavBar from "./components/navBar/navBar";
 import AvailablePlayers from "./components/availablePlayers/availablePlayers";
@@ -15,15 +15,14 @@ const fetchPlayers = async () => {
   const res = await fetch("/players.json");
   return res.json();
 };
-  const playersPromise = fetchPlayers();
+const playersPromise = fetchPlayers();
 function App() {
   const [toggle, setToggle] = useState(true);
   const [availableBalance, setAvailableBalance] = useState(2200000);
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
   const influenceBalance = () =>
     toast("Insufficient balance to select this player.");
-  const maxPlayerSelect = () =>
-    toast("You can select maximum 11 players.");
+  const maxPlayerSelect = () => toast("You can select maximum 11 players.");
 
   return (
     <>

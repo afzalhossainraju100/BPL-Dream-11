@@ -1,7 +1,6 @@
 import React from "react";
 import userImg from "../../assets/user 1.png";
 import flag from "../../assets/report 1.png";
-// using simple alert instead of react-toastify to avoid extra dependency during development
 
 const PlayerCard = ({
   player,
@@ -12,7 +11,6 @@ const PlayerCard = ({
   influenceBalance,
   maxPlayerSelect,
 }) => {
-  // derive selected state from parent `purchasedPlayers` so selection persists across views
   const isSelected = purchasedPlayers?.some((p) => p.id === player.id);
   const handleSelected = (playerData) => {
     const price = playerData.price;

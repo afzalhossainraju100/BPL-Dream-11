@@ -1,18 +1,15 @@
 import React from "react";
 import frame from "../../assets/frame.png";
-import AvailablePlayers from "../availablePlayers/availablePlayers";
 
-const SelectedPlayers = ({ 
+const SelectedPlayers = ({
   purchasedPlayers,
   setPurchasedPlayers,
   availableBalance,
   setAvailableBalance,
   toggle,
-  setToggle
-
- }) => {
+  setToggle,
+}) => {
   const handleDelete = (player) => {
-    // Implement delete functionality here
     const playerID = player.id;
     const updated = purchasedPlayers.filter((p) => p.id !== playerID);
     setAvailableBalance(availableBalance + player.price);
