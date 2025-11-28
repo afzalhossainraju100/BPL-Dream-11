@@ -13,14 +13,14 @@ const fetchPlayers = async () => {
   const res = await fetch("/players.json");
   return res.json();
 };
-
+  const playersPromise = fetchPlayers();
 function App() {
   const [toggle, setToggle] = useState(true);
-  const playersPromise = fetchPlayers();
+  const [availableBalance, setAvailableBalance] = useState(2200000);
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar availableBalance={availableBalance}></NavBar>
       <Banner></Banner>
       <Titlebar setToggle={setToggle} toggle={toggle}></Titlebar>
       {toggle === true ? (
@@ -33,7 +33,11 @@ function App() {
             </div>
           }
         >
-          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+          <AvailablePlayers
+            setAvailableBalance={setAvailableBalance}
+            availableBalance={availableBalance}
+            playersPromise={playersPromise}
+          ></AvailablePlayers>
         </Suspense>
       ) : (
         <SelectedPlayers></SelectedPlayers>

@@ -19,6 +19,9 @@ const SelectedPlayers = () => {
             <img src={frame} alt="Delete" />
           </div>
         </div>
+        <div>
+          <button>Add More Player</button>
+        </div>
     </div>
   );
 };
